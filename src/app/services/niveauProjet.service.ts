@@ -21,5 +21,8 @@ export class NiveauProjetService{
     addnewProjet(data: any ): Observable<any> {
 
         return this.http.post<any>(this.urlcreateProjet + '/addNiveauProjet' , data);
-}
+
+
+      }
+
 }

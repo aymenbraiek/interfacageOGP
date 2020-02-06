@@ -7,11 +7,17 @@ import { AngularMaterialModule } from './model/material.module';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule, ReactiveFormsModule} from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { ListNiveauProjetComponent } from './list-niveau-projet/list-niveau-projet.component';
+import { Routes } from '@angular/router';
+import { CreateNiveauProjetComponent } from './create-niveau-projet/create-niveau-projet.component';
+import { NiveauProjetService } from './services/niveauProjet.service';
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    ListNiveauProjetComponent,
+    CreateNiveauProjetComponent
   ],
   imports: [
     BrowserModule,
@@ -22,7 +28,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
      BrowserAnimationsModule,
      AngularMaterialModule
 ],
-  providers: [],
+  providers: [NiveauProjetService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

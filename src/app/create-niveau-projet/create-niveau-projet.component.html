@@ -1,0 +1,49 @@
+
+<mat-sidenav-container>
+    <mat-sidenav-content>
+          <form [formGroup]="fromgroup" (ngSubmit)="submitForm()" validate>
+            <mat-error *ngIf="errorMessage" class="alert alert-warning">
+               {{errorMessage}}
+            </mat-error>
+            <mat-form-field class="example-full-width">
+             
+              <input matInput placeholder="name" formControlName="name" >
+               <!-- error -->
+         <mat-error *ngIf="errorHandling('name', 'required')">
+             you must provide<strong>name</strong></mat-error>
+            </mat-form-field>
+            <mat-form-field class="example-full-width">
+              <input matInput placeholder="abriavation" formControlName="abriavation">
+               <!-- error -->
+     <mat-error *ngIf="errorHandling('abriavation', 'required')">
+      You must provide a<strong>abriavation</strong>
+   </mat-error>
+            </mat-form-field>
+            <mat-form-field class="example-full-width">
+              <input matInput placeholder="actif" formControlName="actif">
+              <mat-error *ngIf="errorHandling('actif', 'required')">
+                You must provide a<strong>actif</strong>
+             </mat-error>
+            </mat-form-field>
+            <mat-form-field class="example-full-width">
+              <input matInput placeholder="releaseprevue" formControlName="releaseprevue">
+              <mat-error *ngIf="errorHandling('actif', 'required')">
+                You must provide a<strong>actif</strong>
+             </mat-error>
+            </mat-form-field>
+            <mat-form-field class="example-full-width">
+              <input matInput placeholder="metier" formControlName="metier">
+              <mat-error *ngIf="errorHandling('metier', 'required')">
+                You must provide a<strong>metier</strong>
+             </mat-error>
+            </mat-form-field>
+  
+             <!-- Submit -->
+        <div class="button-wrapper">
+          <button mat-flat-button color="primary">Submit</button>
+        </div>
+          </form>
+      
+    </mat-sidenav-content>
+  </mat-sidenav-container> <!-- error -->
+  
