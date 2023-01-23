@@ -8,6 +8,7 @@ import { retry, catchError, map } from 'rxjs/operators';
     providedIn: 'root'
   })
 // how resoolve conflit in git
+// doing any things 
 export class NiveauProjetService{
     private urlcreateProjet = 'http://localhost:8080/biat';
     constructor(private http: HttpClient) { }
