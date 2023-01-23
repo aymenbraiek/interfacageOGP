@@ -7,7 +7,7 @@ import { retry, catchError, map } from 'rxjs/operators';
 @Injectable({
     providedIn: 'root'
   })
-
+// how resoolve conflit in git
 export class NiveauProjetService{
     private urlcreateProjet = 'http://localhost:8080/biat';
     constructor(private http: HttpClient) { }
