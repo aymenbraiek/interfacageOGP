@@ -12,10 +12,15 @@ export class NiveauProjetService{
     private urlcreateProjet = 'http://localhost:8080/biat';
     constructor(private http: HttpClient) { }
 
+
+b
+
+C
   // Http Headers
   httpOptions = {
     headers: new HttpHeaders({
       'Content-Type': 'application/json'
+
     // tslint:disable-next-line:semicolon
     })}
     addnewProjet(data: any ): Observable<any> {
