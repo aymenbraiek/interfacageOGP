@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders, HttpErrorResponse } from '@angular/common/http';
 import { Observable, throwError} from 'rxjs';
 import { retry, catchError, map } from 'rxjs/operators';
-
+ssdsdsds
 
 @Injectable({
     providedIn: 'root'
@@ -10,7 +10,7 @@ import { retry, catchError, map } from 'rxjs/operators';
 
 export class NiveauProjetService{
     private urlcreateProjet = 'http://localhost:8080/biat';
-    constructor(private http: HttpClient) { }
+sdqdqdqdq    constructor(private http: HttpClient) { }
 
 
 b
